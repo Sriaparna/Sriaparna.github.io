@@ -4,69 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sriaparna Sivaraman's Portfolio</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section id="home">
-        <img src="your-picture.jpg" alt="Sriaparna Sivaraman">
-        <h1>Sriaparna Sivaraman</h1>
-        <p>Welcome to my portfolio!</p>
-    </section>
-
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Write a brief bio here...</p>
-    </section>
-
-    <section id="skills">
-        <h2>Skills</h2>
+    <nav>
         <ul>
-            <li>Python</li>
-            <li>Machine Learning</li>
-            <li>TensorFlow</li>
-            <li>Flask</li>
-            <!-- Add more skills as needed -->
+            <li><a href="#about">About Me</a></li>
+            <li><a href="#skills">Skill Set</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <header>
+        <div class="container">
+            <h1>Sriaparna Sivaraman</h1>
+            <img src="images/your-photo.jpg" alt="Your Photo">
+        </div>
+    </header>
+    <section id="about" class="container">
+        <h2>About Me</h2>
+        <p>Hello! I'm Sriaparna Sivaraman, a . .</p>
+    </section>
+    <section id="skills" class="container">
+        <h2>Skill Set</h2>
+        <ul>
+            <li>Programming Languages: Python, JavaScript, C++</li>
+            <li>Web Development: HTML, CSS, JavaScript, Flask</li>
+            <li>Database Management: MySQL, Redis</li>
+            <li>Machine Learning: TensorFlow</li>
+            <li>Cybersecurity: Penetration Testing, Network Security</li>
         </ul>
     </section>
-
-    <section id="projects">
+    <section id="projects" class="container">
         <h2>Projects</h2>
-        <div class="project">
-            <h3>Project Title</h3>
-            <p>Project description...</p>
-            <a href="project-link">View Project</a>
-        </div>
-        <!-- Add more projects as needed -->
+        <ul>
+            <li><a href="https://github.com/Sriaparna/reverse-image-search">Reverse Image Search</a> - A project involving Redis for image retrieval.</li>
+            <li><a href="https://github.com/Sriaparna/object-detection">Object Detection</a> - Using TensorFlow for detecting objects in images.</li>
+            <li><a href="https://github.com/Sriaparna/expense-tracker">Expense Tracker</a> - A Flask application to track monthly expenses.</li>
+        </ul>
     </section>
-
-    <section id="contact">
+    <section id="contact" class="container">
         <h2>Contact</h2>
-        <form action="submit_form.php" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
+        <p>Email: <a href="mailto:your-email@example.com">your-email@example.com</a></p>
+        <p>Phone: <a href="tel:+1234567890">+1234567890</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/your-linkedin-id" target="_blank">your-linkedin-id</a></p>
     </section>
-
     <footer>
-        <p>&copy; 2024 Sriaparna Sivaraman. All rights reserved.</p>
+        <p>&copy; 2024 Sriaparna Sivaraman</p>
     </footer>
-    <script src="script.js"></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
