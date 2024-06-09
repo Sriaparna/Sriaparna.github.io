@@ -36,7 +36,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #F8B195; /* Pastel pink */
+    color: #C8A2C8; /* Pastel lavender */
 }
 
 header {
@@ -72,7 +72,7 @@ header img {
 
 section h2 {
     color: #355C7D; /* Pastel blue */
-    border-bottom: 2px solid #F67280; /* Pastel red */
+    border-bottom: 2px solid #C8A2C8; /* Pastel lavender */
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -96,7 +96,7 @@ ul li a {
 }
 
 ul li a:hover {
-    color: #F67280; /* Pastel red */
+    color: #C8A2C8; /* Pastel lavender */
 }
 
 footer {
@@ -116,5 +116,5 @@ footer {
 }
 
 #contact p a:hover {
-    color: #F67280; /* Pastel red */
+    color: #C8A2C8; /* Pastel lavender */
 }
