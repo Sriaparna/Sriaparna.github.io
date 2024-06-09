@@ -48,7 +48,7 @@ header {
 }
 
 header h1 {
-    color: #355C7D;/* Black */
+    color: #000; /* Black */
     font-size: 3em;
     text-align: center;
     margin-top: 20px;
@@ -75,6 +75,7 @@ header img {
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    color: #333; /* Ensure text color is dark */
 }
 
 section h2 {
