@@ -2,12 +2,12 @@ body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #F7ECE1; /* Pastel background */
+    background-color: #E5E4E2; /* Light pastel background */
     color: #333;
 }
 
 nav {
-    background-color: #6C5B7B; /* Pastel purple */
+    background-color: #355C7D; /* Pastel dark blue */
     padding: 1rem;
     position: fixed;
     width: 100%;
@@ -29,22 +29,29 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #FFF0F5; /* Light pastel lavender */
+    color: #FFF; /* White */
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 nav ul li a:hover {
-    color: #C8A2C8; /* Pastel lavender */
+    color: #6C5B7B; /* Pastel purple */
 }
 
 header {
     text-align: center;
     padding: 4rem 0;
-    background-color: #355C7D; /* Pastel blue */
-    color: #FFF0F5; /* Light pastel lavender */
+    background-color: #6C5B7B; /* Pastel purple */
+    color: #FFF; /* White */
     margin-top: 4rem; /* To offset the fixed navbar */
+}
+
+header h1 {
+    color: #355C7D; /* Pastel dark blue */
+    font-size: 3em;
+    text-align: center;
+    margin-top: 20px;
 }
 
 header .container {
@@ -64,15 +71,15 @@ header img {
     padding: 2rem;
     max-width: 1000px;
     margin: 0 auto;
-    background-color: #FFF0F5; /* Light pastel lavender */
+    background-color: #FFF; /* White */
     margin-bottom: 2rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 section h2 {
-    color: #355C7D; /* Pastel blue */
-    border-bottom: 2px solid #C8A2C8; /* Pastel lavender */
+    color: #355C7D; /* Pastel dark blue */
+    border-bottom: 2px solid #6C5B7B; /* Pastel purple */
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
@@ -83,7 +90,7 @@ ul {
 }
 
 ul li {
-    background: #FFF0F5; /* Light pastel lavender */
+    background: #FFF; /* White */
     margin: 0.5rem 0;
     padding: 0.5rem;
     border-radius: 5px;
@@ -92,29 +99,29 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #355C7D; /* Pastel blue */
+    color: #355C7D; /* Pastel dark blue */
 }
 
 ul li a:hover {
-    color: #C8A2C8; /* Pastel lavender */
+    color: #6C5B7B; /* Pastel purple */
 }
 
 footer {
     text-align: center;
     padding: 1rem 0;
-    background-color: #6C5B7B; /* Pastel purple */
-    color: #FFF0F5; /* Light pastel lavender */
+    background-color: #355C7D; /* Pastel dark blue */
+    color: #FFF; /* White */
     position: relative;
     bottom: 0;
     width: 100%;
 }
 
 #contact p a {
-    color: #355C7D; /* Pastel blue */
+    color: #355C7D; /* Pastel dark blue */
     text-decoration: none;
     transition: color 0.3s;
 }
 
 #contact p a:hover {
-    color: #C8A2C8; /* Pastel lavender */
+    color: #6C5B7B; /* Pastel purple */
 }
