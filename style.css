@@ -1,24 +1,26 @@
-/* General styles */
-body {
-    font-family: Arial, sans-serif;
-    background-color: #C06C84; /* Pastel mauve */
-    color: #355C7D; /* Pastel blue */
-    margin: 0;
-    padding: 0;
-}
-
 /* Header styles */
 header h1 {
-    color: #333; /* Dark color for name */
+    color: #6C5B7B; /* Pastel purple */
     font-size: 3em;
     text-align: center;
     margin-top: 20px;
 }
 
+header img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 20px auto;
+}
+
 /* Navigation styles */
-nav {
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
     background-color: #F8B195; /* Pastel pink */
-    padding: 1rem;
     position: fixed;
     width: 100%;
     top: 0;
@@ -26,16 +28,8 @@ nav {
     z-index: 1000;
 }
 
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
 nav ul li {
-    margin: 0 1rem;
+    margin: 0 15px;
 }
 
 nav ul li a {
@@ -46,7 +40,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    color: #FF6347; /* Highlight color on hover */
+    color: #F67280; /* Pastel red */
 }
 
 /* Section headers */
@@ -54,9 +48,6 @@ section h2 {
     color: #F67280; /* Pastel red */
     text-align: center;
     margin-top: 20px;
-    border-bottom: 2px solid #FF6347; /* Highlight color */
-    padding-bottom: 0.5rem;
-    margin-bottom: 1rem;
 }
 
 /* Container styles */
@@ -66,28 +57,63 @@ section h2 {
     padding: 20px;
     background-color: #FFF0F5; /* Pastel lavender */
     border-radius: 8px;
+    margin-bottom: 20px;
 }
 
-/* Footer styles */
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #C06C84; /* Pastel mauve */
+    color: #355C7D; /* Pastel blue */
+    margin: 0;
+    padding: 0;
+    margin-top: 4rem; /* To offset the fixed navbar */
+}
+
 footer {
     text-align: center;
-    padding: 1rem 0;
+    padding: 10px;
     background-color: #F8B195; /* Pastel pink */
     color: #355C7D; /* Pastel blue */
-    position: relative;
-    bottom: 0;
-    width: 100%;
 }
 
 a {
     color: #6C5B7B; /* Pastel purple */
 }
 
-a:hover {
-    color: #FF6347; /* Highlight color on hover */
-}
-
 /* Smooth scrolling */
 html {
     scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    background: #FFF0F5; /* Pastel lavender */
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+ul li a {
+    text-decoration: none;
+    color: #355C7D; /* Pastel blue */
+}
+
+ul li a:hover {
+    color: #F67280; /* Pastel red */
+}
+
+#contact p a {
+    color: #355C7D; /* Pastel blue */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+#contact p a:hover {
+    color: #F67280; /* Pastel red */
 }
